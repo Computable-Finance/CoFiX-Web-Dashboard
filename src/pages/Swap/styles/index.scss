@@ -2,4 +2,43 @@
 @import 'src/styles/shared.scss';
 
 .cofi-page-swap {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 300px 300px;
+  grid-template-areas:
+            'a a'
+            'b b'
+            'c d'
+            'e e';
+  row-gap: 36px;
+
+  .card1 {
+    grid-area: a;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card2 {
+    width: 100%;
+    height: 100%;
+    grid-area: b;
+  }
+
+  .card3 {
+    width: 100%;
+    height: 100%;
+    grid-area: c;
+  }
+
+  .card4 {
+    width: 100%;
+    height: 100%;
+    grid-area: d;
+  }
+
+  .card5 {
+    width: 100%;
+    height: 100%;
+    grid-area: e;
+  }
 }

@@ -8,7 +8,19 @@ const Swap: FC = () => {
 
   return (
     <div className={`cofi-page ${classPrefix}`}>
-      <Card>
+      <Card className={"card1"}>
+        Swap
+      </Card>
+      <Card className={"card2"}>
+        Swap
+      </Card>
+      <Card className={"card3"}>
+        Swap
+      </Card>
+      <Card className={"card4"}>
+        Swap
+      </Card>
+      <Card className={"card5"}>
         Swap
       </Card>
     </div>

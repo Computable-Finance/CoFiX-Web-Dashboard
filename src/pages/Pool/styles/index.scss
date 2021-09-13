@@ -1,17 +1,16 @@
 @import 'src/styles/shared.scss';
 
 .cofi-page-pool {
-  .card123 {
-    display: grid;
-    grid-template-columns: 30% 30% 40%;
-    grid-template-rows: 300px 300px;
-    grid-template-areas:
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+  grid-template-rows: 300px 300px;
+  grid-template-areas:
             'a a b'
             'a a c'
             'd d d'
             'e e e';
-    row-gap: 36px;
-  }
+  row-gap: 36px;
+
   .card1 {
     grid-area: a;
     width: 100%;
