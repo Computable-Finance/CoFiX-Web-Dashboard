@@ -1,6 +1,7 @@
 @import 'src/styles/shared.scss';
 
 .cofi-page-mining {
+  padding-top: $space;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 300px 300px 300px 300px;
