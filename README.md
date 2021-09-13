@@ -1,10 +1,8 @@
-# CoFiX User Interface
-
-[![build](https://github.com/Computable-Finance/CoFiX-Web-User-Interface/actions/workflows/build.yml/badge.svg)](https://github.com/Computable-Finance/CoFiX-Web-User-Interface/actions/workflows/build.yml) [![deploy](https://github.com/Computable-Finance/CoFiX-Web-User-Interface/actions/workflows/deploy.yml/badge.svg)](https://github.com/Computable-Finance/CoFiX-Web-User-Interface/actions/workflows/deploy.yml)
+# CoFiX Dashboard
 
 ## Introduction
 
-This repository is the CoFiX Dapp for users.
+This repository is the CoFiX Dashboard for users.
 
 ### What is CoFix?
 
@@ -20,7 +18,7 @@ CoFiX is the first innovative product in the CoFi field, and it is a DEX based o
 
 1. Clone the project
 ```shell
-git clone https://github.com/Computable-Finance/CoFiX-Web-User-Interface
+git clone https://github.com/Computable-Finance/CoFiX-Web-Dashboard
 ```
 
 2. Install dependencies
