@@ -8,7 +8,25 @@ const Mining: FC = () => {
 
   return (
     <div className={`cofi-page ${classPrefix}`}>
-      <Card>
+      <Card className={'card1'}>
+        Mining
+      </Card>
+      <Card className={'card2'}>
+        Mining
+      </Card>
+      <Card className={'card3'}>
+        Mining
+      </Card>
+      <Card className={'card4'}>
+        Mining
+      </Card>
+      <Card className={'card5'}>
+        Mining
+      </Card>
+      <Card className={'card6'}>
+        Mining
+      </Card>
+      <Card className={'card7'}>
         Mining
       </Card>
     </div>
