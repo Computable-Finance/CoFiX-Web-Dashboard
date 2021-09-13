@@ -11,8 +11,8 @@ const Nav: FC = () => {
   const location = useLocation()
 
   const routes = [
-    {path: '/swap', content: <Trans>Swap</Trans>},
     {path: '/pool', content: <Trans>Pool</Trans>},
+    {path: '/swap', content: <Trans>Swap</Trans>},
     {path: '/mining', content: <Trans>Mining</Trans>},
     {path: '/id', content: <Trans>ID</Trans>},
   ].map((r) => (
