@@ -9,7 +9,7 @@ const Index: FC = () => {
   const classPrefix = 'cofi-page-index'
 
   return (
-    <div className={`${classPrefix}`}>
+    <div className={`cofi-page ${classPrefix}`}>
       <header className={'cofi-header'}>
         <div className={`cofi-header-prefix`}>
           <Link to="/">
@@ -21,6 +21,9 @@ const Index: FC = () => {
           <MenuButton/>
         </div>
       </header>
+
+
+
     </div>
   )
 }

@@ -26,7 +26,6 @@
   padding: $space-sm;
   @include tablet {
     padding: 2 * $space-md;
-    max-width: $content-width;
   }
 
   &:hover {

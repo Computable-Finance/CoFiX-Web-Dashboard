@@ -8,14 +8,20 @@ const Pool: FC = () => {
 
   return (
     <div className={`cofi-page ${classPrefix}`}>
-      <Card>
-        Pool
+      <Card className={"card4"}>
+        Pool1
       </Card>
-      <Card>
-        Pool
+      <Card className={"card4"}>
+        Pool2
       </Card>
-      <Card>
-        Pool
+      <Card className={"card4"}>
+        Pool3
+      </Card>
+      <Card className={"card4"}>
+        Pool4
+      </Card>
+      <Card className={"card4"}>
+        Pool5
       </Card>
     </div>
   )
