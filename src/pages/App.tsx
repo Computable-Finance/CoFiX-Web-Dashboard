@@ -8,31 +8,38 @@ const Swap = loadable(() => import('./Swap'))
 const Pool = loadable(() => import('./Pool'))
 const Mining = loadable(() => import('./Mining'))
 const ID = loadable(() => import('./ID'))
+const Index = loadable(() => import('./Index'))
 
 function App() {
   return (
     <main>
       <Router>
-        <Header />
-
         <Switch>
+          <Route path="/" exact>
+            <Index />
+          </Route>
+
           <Route path="/swap">
+            <Header />
             <Swap />
           </Route>
 
           <Route path="/pool">
+            <Header />
             <Pool />
           </Route>
 
           <Route path="/mining">
+            <Header />
             <Mining />
           </Route>
 
           <Route path="/id">
+            <Header />
             <ID />
           </Route>
 
-          <Redirect to="/swap" />
+          <Redirect to="/" />
         </Switch>
 
       </Router>
