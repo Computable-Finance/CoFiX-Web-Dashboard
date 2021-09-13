@@ -9,9 +9,6 @@
     "@lingui/react": "^3.10.2",
     "@loadable/component": "^5.15.0",
     "@use-it/interval": "^1.0.0",
-    "@web3-react/core": "^6.1.9",
-    "@web3-react/injected-connector": "^6.0.7",
-    "@web3-react/walletconnect-connector": "^6.2.0",
     "bignumber.js": "^9.0.1",
     "classnames": "^2.3.1",
     "dayjs": "^1.10.6",
@@ -35,10 +32,7 @@
     "lint": "eslint src --ext ts --ext tsx --ext js",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "i18n:extract": "lingui extract --clean",
-    "i18n:compile": "lingui compile --typescript",
-    "abi:generate": "npm run abi:generate-nest && npm run abi:generate-cofix",
-    "abi:generate-nest": "typechain --target ethers-v5 --out-dir src/abis/types/nest './src/abis/json/nest/**/*.json'",
-    "abi:generate-cofix": "typechain --target ethers-v5 --out-dir src/abis/types/cofix './src/abis/json/cofix/**/*.json'"
+    "i18n:compile": "lingui compile --typescript"
   },
   "husky": {
     "hooks": {
