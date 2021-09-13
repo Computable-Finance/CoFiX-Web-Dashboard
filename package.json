@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/charts": "^1.2.11",
     "@ethersproject/address": "^5.4.0",
     "@ethersproject/providers": "^5.3.1",
     "@lingui/detect-locale": "^3.10.4",

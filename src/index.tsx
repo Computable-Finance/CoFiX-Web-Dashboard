@@ -5,6 +5,7 @@ import BigNumber from 'bignumber.js'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import I18nProvider from 'src/libs/i18n/provider'
+import 'reflect-metadata'
 
 import App from './pages/App'
 

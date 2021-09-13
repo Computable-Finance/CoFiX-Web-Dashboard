@@ -1,25 +1,44 @@
 @import 'src/styles/shared.scss';
 
 .cofi-page-pool {
+  .card123 {
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 300px 300px;
+    grid-template-areas:
+            'a a b'
+            'a a c'
+            'd d d'
+            'e e e';
+    row-gap: 36px;
+  }
   .card1 {
-    padding: 20px;
-    margin: 20px;
+    grid-area: a;
+    width: 100%;
+    height: 100%;
   }
 
   .card2 {
-    padding: 20px;
-    margin: 20px;
+    width: 100%;
+    height: 100%;
+    grid-area: b;
   }
 
   .card3 {
-    padding: 20px;
-    margin: 20px;
+    width: 100%;
+    height: 100%;
+    grid-area: c;
   }
 
   .card4 {
     width: 100%;
-    height: 500px;
-    padding: 20px;
-    margin: 20px;
+    height: 100%;
+    grid-area: d;
+  }
+
+  .card5 {
+    width: 100%;
+    height: 100%;
+    grid-area: e;
   }
 }
