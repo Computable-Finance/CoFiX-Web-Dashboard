@@ -1,5 +1,7 @@
 # CoFiX Dashboard
 
+[![build](https://github.com/Computable-Finance/CoFiX-Web-Dashboard/actions/workflows/build.yml/badge.svg)](https://github.com/Computable-Finance/CoFiX-Web-Dashboard/actions/workflows/build.yml)
+
 ## Introduction
 
 This repository is the CoFiX Dashboard for users.
