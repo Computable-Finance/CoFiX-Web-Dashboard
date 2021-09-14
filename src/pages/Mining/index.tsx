@@ -2,6 +2,9 @@ import './styles'
 
 import {FC} from 'react'
 import Card from 'src/components/Card'
+import Card1 from './Card1'
+import Card4 from './Card4'
+import Card6 from './Card6'
 
 const Mining: FC = () => {
   const classPrefix = 'cofi-page-mining'
@@ -9,25 +12,25 @@ const Mining: FC = () => {
   return (
     <div className={`cofi-page ${classPrefix}`}>
       <Card className={'card1'}>
-        Mining
+        <Card1 />
       </Card>
       <Card className={'card2'}>
-        Mining
+        <Card1 />
       </Card>
       <Card className={'card3'}>
-        Mining
+        <Card1 />
       </Card>
       <Card className={'card4'}>
-        Mining
+        <Card4 />
       </Card>
       <Card className={'card5'}>
-        Mining
+        <Card4 />
       </Card>
       <Card className={'card6'}>
-        Mining
+        <Card6 />
       </Card>
       <Card className={'card7'}>
-        Mining
+        <Card6 />
       </Card>
     </div>
   )

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Line } from '@ant-design/charts';
 
-const TVL: React.FC = () => {
+const Card4: React.FC = () => {
   const data = [
     {
       year: '1991',
@@ -93,4 +93,4 @@ const TVL: React.FC = () => {
   );
 };
 
-export default TVL;
+export default Card4;

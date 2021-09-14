@@ -2,7 +2,7 @@ import './styles'
 
 import {FC} from 'react'
 import Card from 'src/components/Card'
-import TVL from './TVL'
+import Card1 from './Card1'
 import Card2 from './Card2'
 
 const Pool: FC = () => {
@@ -12,7 +12,7 @@ const Pool: FC = () => {
     <div className={`cofi-page ${classPrefix}`}>
       <Card className={"card1"}>
         <div>
-          <TVL/>
+          <Card1/>
         </div>
       </Card>
       <Card className={"card2"}>
@@ -22,10 +22,10 @@ const Pool: FC = () => {
         <Card2 />
       </Card>
       <Card className={"card4"}>
-        <TVL/>
+        <Card1/>
       </Card>
       <Card className={"card5"}>
-        <TVL/>
+        <Card1/>
       </Card>
     </div>
   )

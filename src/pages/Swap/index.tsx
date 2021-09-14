@@ -2,6 +2,8 @@ import './styles'
 
 import {FC} from 'react'
 import Card from 'src/components/Card'
+import Card1 from './Card1'
+import Card3 from './Card3'
 
 const Swap: FC = () => {
   const classPrefix = 'cofi-page-swap'
@@ -9,19 +11,19 @@ const Swap: FC = () => {
   return (
     <div className={`cofi-page ${classPrefix}`}>
       <Card className={"card1"}>
-        Swap
+        <Card1 />
       </Card>
       <Card className={"card2"}>
-        Swap
+        <Card1 />
       </Card>
       <Card className={"card3"}>
-        Swap
+        <Card3 />
       </Card>
       <Card className={"card4"}>
-        Swap
+        <Card3 />
       </Card>
       <Card className={"card5"}>
-        Swap
+        <Card1 />
       </Card>
     </div>
   )

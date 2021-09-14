@@ -1,7 +1,7 @@
 import React from 'react';
 import { Pie } from '@ant-design/charts';
 
-const Card2: React.FC = () => {
+const Card6: React.FC = () => {
   const data = [
     {
       type: '分类一',
@@ -40,12 +40,13 @@ const Card2: React.FC = () => {
     },
     style: {
       width: "100%",
-      height: 210,
-      margin: 0
+      height: 500,
+      margin: 0,
+      padding: 40
     },
     interactions: [{type: 'pie-legend-active'}, {type: 'element-active'}],
   };
   return <Pie {...config}/>;
 };
 
-export default Card2;
+export default Card6;
