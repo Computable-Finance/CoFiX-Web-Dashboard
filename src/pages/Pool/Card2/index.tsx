@@ -40,7 +40,8 @@ const DemoPie: React.FC = () => {
     },
     style: {
       width: "100%",
-      height: 210
+      height: 210,
+      margin: 0
     },
     interactions: [{type: 'pie-legend-active'}, {type: 'element-active'}],
   };

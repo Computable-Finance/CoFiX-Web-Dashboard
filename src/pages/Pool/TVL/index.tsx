@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Line } from '@ant-design/charts';
 
 const TVL: React.FC = () => {
@@ -64,9 +64,33 @@ const TVL: React.FC = () => {
         },
       },
     },
+    style: {
+      height: 300,
+      width: "100%"
+    },
     interactions: [{type: 'marker-active'}],
   };
-  return <Line {...config} />;
+  const [value, setValue] = useState("1W")
+  const handleChoice = (value: string) => {
+    setValue(value)
+  }
+
+  return (
+    <div style={{ padding: "0 20px" }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 40 }}>
+        <div>
+          <div style={{marginBottom: 10}}>TVL</div>
+          <div>Value</div>
+        </div>
+        <div style={{display: "flex", justifyContent: "space-between", width: 120}}>
+          <div onClick={() => handleChoice("1W")} style={{ color: value === "1W" ? "deepskyblue" : "black", cursor: "pointer", userSelect: "none" }}>1W</div>
+          <div onClick={() => handleChoice("1M")} style={{ color: value === "1M" ? "deepskyblue" : "black", cursor: "pointer", userSelect: "none" }}>1M</div>
+          <div onClick={() => handleChoice("All")} style={{ color: value === "All" ? "deepskyblue" : "black", cursor: "pointer", userSelect: "none" }}>All</div>
+        </div>
+      </div>
+      <Line {...config} />
+    </div>
+  );
 };
 
 export default TVL;
