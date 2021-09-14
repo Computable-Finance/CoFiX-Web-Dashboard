@@ -2,22 +2,31 @@
 
 .cofi-page-index {
   padding-top: $space-md + 5;
-  height: 100%;
-  width: 100%;
-  background: black;
 }
 
 .cofi-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
   text-align: center;
-  padding-bottom: 120px;
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .cofi-button {
   width: 200px;
   margin: 40px;
+}
+
+.bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("./bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  z-index: -9;
+  transition: all 0.3s ease-in-out;
 }
