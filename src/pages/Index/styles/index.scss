@@ -1,5 +1,16 @@
 @import 'src/styles/shared.scss';
 
 .cofi-page-index {
-  margin-top: $space-md + 5;;
+  padding-top: $space-md + 5;
+  height: 100%;
+  width: 100%;
+  background: black;
+}
+
+.cofi-body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
