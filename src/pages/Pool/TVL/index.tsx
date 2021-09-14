@@ -1,7 +1,7 @@
 import React from 'react';
 import { Line } from '@ant-design/charts';
 
-const DemoLine: React.FC = () => {
+const TVL: React.FC = () => {
   const data = [
     {
       year: '1991',
@@ -69,4 +69,4 @@ const DemoLine: React.FC = () => {
   return <Line {...config} />;
 };
 
-export default DemoLine;
+export default TVL;

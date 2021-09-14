@@ -3,6 +3,7 @@ import './styles'
 import {FC} from 'react'
 import Card from 'src/components/Card'
 import TVL from './TVL'
+import Card2 from './Card2'
 
 const Pool: FC = () => {
   const classPrefix = 'cofi-page-pool'
@@ -15,8 +16,10 @@ const Pool: FC = () => {
         </div>
       </Card>
       <Card className={"card2"}>
+        <Card2 />
       </Card>
       <Card className={"card3"}>
+        <Card2 />
       </Card>
       <Card className={"card4"}>
         <TVL/>
