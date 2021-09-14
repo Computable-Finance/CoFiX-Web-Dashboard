@@ -4,7 +4,7 @@ import "./index.scss"
 const Card1: React.FC = () => {
   return (
     <div>
-      <div className="cofi-title1">72438.908</div>
+      <div className="cofi-title4">72438.908</div>
       <div className="cofi-desc">Accumulated repurchase (COFI)</div>
     </div>
   );

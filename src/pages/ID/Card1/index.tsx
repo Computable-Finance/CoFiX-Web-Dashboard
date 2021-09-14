@@ -1,10 +1,11 @@
 import React from 'react';
+import "./index.scss"
 
 const Card1: React.FC = () => {
   return (
     <div>
-      <div style={{ fontFamily: "American Typewriter", fontWeight: "bold", fontSize: 32, textAlign: "center"}}>72438.908</div>
-      <div style={{ fontFamily: "OPPOSans", fontWeight: "lighter", fontSize: 12, textAlign: "center"  }}>Accumulated repurchase (COFI)</div>
+      <div className="cofi-title">72438.908</div>
+      <div className="cofi-desc">Accumulated repurchase (COFI)</div>
     </div>
   );
 };
