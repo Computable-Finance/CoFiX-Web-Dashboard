@@ -35,9 +35,9 @@ const DemoArea: React.FC = () => {
           <div style={{marginBottom: 10}}>新增用户</div>
         </div>
         <div style={{display: "flex", justifyContent: "space-between", width: 120}}>
-          <div onClick={() => handleChoice("1W")} style={{ color: value === "1W" ? "deepskyblue" : "black", cursor: "pointer", userSelect: "none" }}>1W</div>
-          <div onClick={() => handleChoice("1M")} style={{ color: value === "1M" ? "deepskyblue" : "black", cursor: "pointer", userSelect: "none" }}>1M</div>
-          <div onClick={() => handleChoice("All")} style={{ color: value === "All" ? "deepskyblue" : "black", cursor: "pointer", userSelect: "none" }}>All</div>
+          <div onClick={() => handleChoice("1W")} style={{ color: value === "1W" ? "#5ac276" : "black", cursor: "pointer", userSelect: "none" }}>1W</div>
+          <div onClick={() => handleChoice("1M")} style={{ color: value === "1M" ? "#5ac276" : "black", cursor: "pointer", userSelect: "none" }}>1M</div>
+          <div onClick={() => handleChoice("All")} style={{ color: value === "All" ? "#5ac276" : "black", cursor: "pointer", userSelect: "none" }}>All</div>
         </div>
       </div>
       <Area {...config} />
