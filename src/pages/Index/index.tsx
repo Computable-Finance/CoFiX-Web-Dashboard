@@ -56,13 +56,13 @@ const Index: FC = () => {
       <PulseDiv style={{position: "absolute", left: "80.97%", top: "44.11%"}}>
         <CofiX4/>
       </PulseDiv>
-      <PulseDiv style={{position: "absolute", left: "68.79%", top: "64.05%"}}>
+      <PulseDiv style={{position: "absolute", left: "69.79%", top: "64.05%"}}>
         <CofiX5/>
       </PulseDiv>
-      <PulseDiv style={{position: "absolute", left: "40.7%", top: "80.99%"}}>
+      <PulseDiv style={{position: "absolute", left: "36.7%", top: "80.99%"}}>
         <CofiX6/>
       </PulseDiv>
-      <PulseDiv style={{position: "absolute", left: "21.52%", top: "64.67%"}}>
+      <PulseDiv style={{position: "absolute", left: "20.52%", top: "64.67%"}}>
         <CofiX7/>
       </PulseDiv>
       <PulseDiv style={{position: "absolute", left: "5.86%", top: "44%"}}>
