@@ -18,10 +18,10 @@ const flipAnimation = keyframes`${flipInY}`;
 const Index: FC = () => {
   const classPrefix = 'cofi-page-index'
   const PulseDiv = styled.div`
-  animation: 1s ${pulseAnimation};
+  animation: 3s infinite ${pulseAnimation};
 `;
   const FlipDiv = styled.div`
-   animation: 1s ${flipAnimation};
+   animation: 3s infinite ${flipAnimation};
   `;
 
   return (
