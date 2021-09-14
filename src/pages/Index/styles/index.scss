@@ -10,7 +10,14 @@
 .cofi-body {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: 120px;
+}
+
+.cofi-button {
+  width: 200px;
+  margin: 40px;
 }
