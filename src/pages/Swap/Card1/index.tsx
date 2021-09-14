@@ -46,12 +46,12 @@ const Card1: React.FC = () => {
     yField: 'value',
     label: {},
     point: {
-      size: 5,
-      shape: 'diamond',
+      size: 2,
+      shape: 'circle',
       style: {
         fill: 'white',
-        stroke: '#5B8FF9',
-        lineWidth: 2,
+        stroke: '#59c3b1',
+        lineWidth: 1,
       },
     },
     tooltip: {showMarkers: false},
@@ -67,6 +67,9 @@ const Card1: React.FC = () => {
     style: {
       height: 300,
       width: "100%"
+    },
+    lineStyle: {
+      stroke: 'l(0) 0:#5ac276 0.5:#59c3b1 1:#6fd8c4'
     },
     interactions: [{type: 'marker-active'}],
   };
