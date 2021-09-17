@@ -9,21 +9,15 @@ import {
 import {MenuButton} from "../shared/Menu";
 import Button from "../../components/Button";
 import styled, {keyframes} from 'styled-components';
-import {pulse, flipInY} from 'react-animations';
+import {pulse} from 'react-animations';
 
 const pulseAnimation = keyframes`${pulse}`;
-const flipAnimation = keyframes`${flipInY}`;
-
 
 const Index: FC = () => {
   const classPrefix = 'cofi-page-index'
   const PulseDiv = styled.div`
   animation: 3s infinite ${pulseAnimation};
 `;
-  const FlipDiv = styled.div`
-   animation: 3s infinite ${flipAnimation};
-  `;
-
   return (
     <>
       <div className={"bg"}/>
@@ -42,9 +36,9 @@ const Index: FC = () => {
           </div>
         </header>
         <div className={'cofi-body'}>
-          <FlipDiv>
+          <div>
             <CofiX1/>
-          </FlipDiv>
+          </div>
           <Button gradient primary className="cofi-button">App</Button>
         </div>
         <PulseDiv style={{position: "absolute", left: "43%", top: "10.33%"}}>
