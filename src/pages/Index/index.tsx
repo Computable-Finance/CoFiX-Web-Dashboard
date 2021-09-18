@@ -39,7 +39,7 @@ const Index: FC = () => {
           <div>
             <CofiX1/>
           </div>
-          <Button gradient primary className="cofi-button">App</Button>
+          <Button gradient primary className="cofi-button" onClick={() => {window.location.href="https://cofix.tech"}}>App</Button>
         </div>
         <PulseDiv style={{position: "absolute", left: "43%", top: "10.33%"}}>
           <CofiX2/>
