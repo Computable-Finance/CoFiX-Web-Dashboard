@@ -1,8 +1,8 @@
 import {FC} from 'react'
-import Card from 'src/components/Card'
 import Card1 from './Card1'
 import Card3 from './Card3'
 import styled from "styled-components";
+import { A, B, C, D, E } from 'src/components/Grid';
 
 const Page = styled.div`
   padding-top: 22px;
@@ -15,32 +15,6 @@ const Page = styled.div`
             'c d'
             'e e';
   row-gap: 36px;
-`
-
-const A = styled(Card)`
-    grid-area: a;
-    width: 100%;
-    height: 100%;
-`
-const B = styled(Card)`
-    grid-area: b;
-    width: 100%;
-    height: 100%;
-`
-const C = styled(Card)`
-    grid-area: c;
-    width: 100%;
-    height: 100%;
-`
-const D = styled(Card)`
-    grid-area: d;
-    width: 100%;
-    height: 100%;
-`
-const E = styled(Card)`
-    grid-area: e;
-    width: 100%;
-    height: 100%;
 `
 
 const Swap: FC = () => {
