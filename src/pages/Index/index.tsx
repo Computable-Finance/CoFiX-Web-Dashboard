@@ -13,11 +13,13 @@ import {pulse} from 'react-animations';
 
 const pulseAnimation = keyframes`${pulse}`;
 
-const Index: FC = () => {
-  const classPrefix = 'cofi-page-index'
-  const PulseDiv = styled.div`
+const PulseDiv = styled.div`
   animation: 3s infinite ${pulseAnimation};
 `;
+
+const Index: FC = () => {
+  const classPrefix = 'cofi-page-index'
+
   return (
     <>
       <div className={"bg"}/>
@@ -67,7 +69,6 @@ const Index: FC = () => {
         </PulseDiv>
       </div>
     </>
-
   )
 }
 

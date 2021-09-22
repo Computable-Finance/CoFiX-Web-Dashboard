@@ -1,13 +1,35 @@
 import React from 'react';
-import "./index.scss"
+import styled from "styled-components";
 
-const Card1: React.FC = () => {
+const Title = styled.div`
+  font-family: AmericanTypewriterBold, serif;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  background: linear-gradient(91.55deg, #DF5A4A 0%, #D68D6F 100%);
+  background-clip: initial;
+  -webkit-background-clip: text;
+  color: transparent;
+`
+
+const Desc = styled.div`
+  font-family: OPPOSans, fangsong;
+  font-weight: lighter;
+  font-size: 12px;
+  text-align: center
+`
+
+const Card: React.FC = () => {
   return (
     <div>
-      <div className="cofi-title1">72438.908</div>
-      <div className="cofi-desc">Accumulated repurchase (COFI)</div>
+      <Title>
+        72438.908
+      </Title>
+      <Desc>
+        Accumulated repurchase (COFI)
+      </Desc>
     </div>
   );
 };
 
-export default Card1;
+export default Card;
