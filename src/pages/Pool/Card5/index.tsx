@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {Area} from '@ant-design/charts';
+import {Line} from '@ant-design/charts';
 
 const Card: React.FC = () => {
   const [data, setData] = useState([]);
@@ -41,7 +41,7 @@ const Card: React.FC = () => {
           <div onClick={() => handleChoice("9999")} style={{ color: value === "9999" ? "#5ac276" : "black", cursor: "pointer", userSelect: "none" }}>All</div>
         </div>
       </div>
-      <Area {...config} />
+      <Line {...config} />
     </div>
   );
 };

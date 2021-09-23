@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import {Area} from '@ant-design/charts';
+import {Line} from '@ant-design/charts';
 
-const DemoArea: React.FC = () => {
+const DemoLine: React.FC = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     asyncFetch();
@@ -40,9 +40,9 @@ const DemoArea: React.FC = () => {
           <div onClick={() => handleChoice("All")} style={{ color: value === "All" ? "#5ac276" : "black", cursor: "pointer", userSelect: "none" }}>All</div>
         </div>
       </div>
-      <Area {...config} />
+      <Line {...config} />
     </div>
     );
 };
 
-export default DemoArea;
+export default DemoLine;
