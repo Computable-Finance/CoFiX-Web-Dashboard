@@ -1,5 +1,5 @@
-import React from 'react';
-import { Pie } from '@ant-design/charts';
+import React from 'react'
+import { Pie } from '@ant-design/charts'
 
 const Card6: React.FC = () => {
   const data = [
@@ -27,7 +27,7 @@ const Card6: React.FC = () => {
       type: '其他',
       value: 5,
     },
-  ];
+  ]
   const config = {
     appendPadding: 10,
     data: data,
@@ -39,14 +39,14 @@ const Card6: React.FC = () => {
       content: '{name} {percentage}',
     },
     style: {
-      width: "100%",
+      width: '100%',
       height: 500,
       margin: 0,
-      padding: 40
+      padding: 40,
     },
-    interactions: [{type: 'pie-legend-active'}, {type: 'element-active'}],
-  };
-  return <Pie {...config}/>;
-};
+    interactions: [{ type: 'pie-legend-active' }, { type: 'element-active' }],
+  }
+  return <Pie {...config} />
+}
 
-export default Card6;
+export default Card6

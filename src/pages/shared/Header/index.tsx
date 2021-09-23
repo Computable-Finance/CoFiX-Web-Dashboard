@@ -1,20 +1,20 @@
 import './styles'
 
-import {Trans} from '@lingui/macro'
+import { Trans } from '@lingui/macro'
 import classNames from 'classnames'
-import {FC} from 'react'
-import {Link, useLocation} from 'react-router-dom'
-import {CoFiXLogoSmall, CoFiXLogoWithText} from 'src/components/Icon'
-import {MenuButton} from 'src/pages/shared/Menu'
+import { FC } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import { CoFiXLogoSmall, CoFiXLogoWithText } from 'src/components/Icon'
+import { MenuButton } from 'src/pages/shared/Menu'
 
 const Nav: FC = () => {
   const location = useLocation()
 
   const routes = [
-    {path: '/pool', content: <Trans>Pool</Trans>},
-    {path: '/swap', content: <Trans>Swap</Trans>},
-    {path: '/mining', content: <Trans>Mining</Trans>},
-    {path: '/id', content: <Trans>ID</Trans>},
+    { path: '/pool', content: <Trans>Pool</Trans> },
+    { path: '/swap', content: <Trans>Swap</Trans> },
+    { path: '/mining', content: <Trans>Mining</Trans> },
+    { path: '/id', content: <Trans>ID</Trans> },
   ].map((r) => (
     <li
       key={r.path}
@@ -31,7 +31,7 @@ const Nav: FC = () => {
     <nav className={`${classPrefix}`}>
       <ul>
         <li className={`${classPrefix}-logo`}>
-          <CoFiXLogoSmall/>
+          <CoFiXLogoSmall />
         </li>
         {routes}
       </ul>
@@ -47,15 +47,15 @@ const Header: FC = () => {
       <header className={`${classPrefix}`}>
         <div className={`${classPrefix}-prefix`}>
           <Link to="/">
-            <CoFiXLogoWithText/>
+            <CoFiXLogoWithText />
             <div>Dashboard</div>
           </Link>
         </div>
 
-        <Nav/>
+        <Nav />
 
         <div className={`${classPrefix}-extra`}>
-          <MenuButton/>
+          <MenuButton />
         </div>
       </header>
     </div>

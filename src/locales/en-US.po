@@ -1,2 +1,95 @@
 msgid ""
 msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language: \n"
+"Language-Team: \n"
+"Content-Type: \n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#: src/pages/Pool/Card1/index.tsx
+#: src/pages/Pool/Card4/index.tsx
+msgid "1M"
+msgstr "1M"
+
+#: src/pages/Pool/Card1/index.tsx
+#: src/pages/Pool/Card4/index.tsx
+msgid "1W"
+msgstr "1W"
+
+#: src/pages/Swap/Card5/index.tsx
+msgid "Accumulated Fee Income"
+msgstr "Accumulated Fee Income"
+
+#: src/pages/Pool/Card1/index.tsx
+#: src/pages/Pool/Card4/index.tsx
+msgid "All"
+msgstr "All"
+
+#: src/pages/shared/Menu/index.tsx
+msgid "Community"
+msgstr "Community"
+
+#: src/pages/Swap/Card2/index.tsx
+msgid "Cumulative Number of Transactions"
+msgstr "Cumulative Number of Transactions"
+
+#: src/pages/Swap/Card1/index.tsx
+msgid "Cumulative Transaction Volume"
+msgstr "Cumulative Transaction Volume"
+
+#: src/pages/shared/Menu/index.tsx
+msgid "Document"
+msgstr "Document"
+
+#: src/pages/shared/Menu/index.tsx
+msgid "Github"
+msgstr "Github"
+
+#: src/pages/shared/Header/index.tsx
+msgid "ID"
+msgstr "ID"
+
+#: src/pages/shared/Header/index.tsx
+msgid "Mining"
+msgstr "Mining"
+
+#: src/pages/Pool/Card4/index.tsx
+msgid "Net Value of Fund Pool"
+msgstr "Net Value of Fund Pool"
+
+#: src/pages/shared/Header/index.tsx
+msgid "Pool"
+msgstr "Pool"
+
+#: src/pages/shared/Header/index.tsx
+msgid "Swap"
+msgstr "Swap"
+
+#: src/pages/shared/Menu/index.tsx
+msgid "Switch to v2.0"
+msgstr "Switch to v2.0"
+
+#: src/pages/Pool/Card1/index.tsx
+msgid "TVL"
+msgstr "TVL"
+
+#: src/pages/Pool/Card5/index.tsx
+msgid "Token Amount"
+msgstr "Token Amount"
+
+#: src/pages/Swap/Card4/index.tsx
+msgid "Transaction Number Distribution"
+msgstr "Transaction Number Distribution"
+
+#: src/pages/Swap/Card3/index.tsx
+msgid "Transaction Volume Distribution"
+msgstr "Transaction Volume Distribution"
+
+#: src/pages/shared/Menu/index.tsx
+msgid "WhitePaper"
+msgstr "WhitePaper"

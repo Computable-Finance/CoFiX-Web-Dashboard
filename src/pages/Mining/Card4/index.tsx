@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import { Line } from '@ant-design/charts';
+import React, { useState } from 'react'
+import { Line } from '@ant-design/charts'
 
 const Card4: React.FC = () => {
   const data = [
@@ -39,7 +39,7 @@ const Card4: React.FC = () => {
       year: '1999',
       value: 13,
     },
-  ];
+  ]
   const config = {
     data: data,
     xField: 'year',
@@ -54,7 +54,7 @@ const Card4: React.FC = () => {
         lineWidth: 1,
       },
     },
-    tooltip: {showMarkers: false},
+    tooltip: { showMarkers: false },
     state: {
       active: {
         style: {
@@ -66,34 +66,49 @@ const Card4: React.FC = () => {
     },
     style: {
       height: 300,
-      width: "100%"
+      width: '100%',
     },
     lineStyle: {
-      stroke: 'l(0) 0:#5ac276 0.5:#59c3b1 1:#6fd8c4'
+      stroke: 'l(0) 0:#5ac276 0.5:#59c3b1 1:#6fd8c4',
     },
-    interactions: [{type: 'marker-active'}],
-  };
-  const [value, setValue] = useState("1W")
+    interactions: [{ type: 'marker-active' }],
+  }
+  const [value, setValue] = useState('1W')
   const handleChoice = (value: string) => {
     setValue(value)
   }
 
   return (
-    <div style={{ padding: "0 20px" }}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 40 }}>
+    <div style={{ padding: '0 20px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 40 }}>
         <div>
-          <div style={{marginBottom: 10}}>TVL</div>
+          <div style={{ marginBottom: 10 }}>TVL</div>
           <div>Value</div>
         </div>
-        <div style={{display: "flex", justifyContent: "space-between", width: 120}}>
-          <div onClick={() => handleChoice("1W")} style={{ color: value === "1W" ? "#5ac276" : "black", cursor: "pointer", userSelect: "none" }}>1W</div>
-          <div onClick={() => handleChoice("1M")} style={{ color: value === "1M" ? "#5ac276" : "black", cursor: "pointer", userSelect: "none" }}>1M</div>
-          <div onClick={() => handleChoice("All")} style={{ color: value === "All" ? "#5ac276" : "black", cursor: "pointer", userSelect: "none" }}>All</div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', width: 120 }}>
+          <div
+            onClick={() => handleChoice('1W')}
+            style={{ color: value === '1W' ? '#5ac276' : 'black', cursor: 'pointer', userSelect: 'none' }}
+          >
+            1W
+          </div>
+          <div
+            onClick={() => handleChoice('1M')}
+            style={{ color: value === '1M' ? '#5ac276' : 'black', cursor: 'pointer', userSelect: 'none' }}
+          >
+            1M
+          </div>
+          <div
+            onClick={() => handleChoice('All')}
+            style={{ color: value === 'All' ? '#5ac276' : 'black', cursor: 'pointer', userSelect: 'none' }}
+          >
+            All
+          </div>
         </div>
       </div>
       <Line {...config} />
     </div>
-  );
-};
+  )
+}
 
-export default Card4;
+export default Card4

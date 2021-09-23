@@ -9,12 +9,12 @@ import 'reflect-metadata'
 
 import App from './pages/App'
 
-BigNumber.config({ROUNDING_MODE: BigNumber.ROUND_DOWN})
+BigNumber.config({ ROUNDING_MODE: BigNumber.ROUND_DOWN })
 export const rootElement = document.getElementById('root')
 const app = (
   <React.StrictMode>
     <I18nProvider>
-      <App/>
+      <App />
     </I18nProvider>
   </React.StrictMode>
 )

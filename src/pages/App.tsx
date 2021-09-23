@@ -3,7 +3,6 @@ import React from 'react'
 import { HashRouter as Router, Redirect, Route, Switch } from 'react-router-dom'
 import Header from 'src/pages/shared/Header'
 
-
 const Swap = loadable(() => import('./Swap'))
 const Pool = loadable(() => import('./Pool'))
 const Mining = loadable(() => import('./Mining'))
@@ -41,7 +40,6 @@ function App() {
 
           <Redirect to="/" />
         </Switch>
-
       </Router>
     </main>
   )

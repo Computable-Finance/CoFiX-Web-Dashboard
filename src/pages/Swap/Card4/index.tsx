@@ -1,19 +1,20 @@
-import React, {useEffect, useState} from 'react';
-import {Pie} from '@ant-design/charts';
+import React, { useEffect, useState } from 'react'
+import { Pie } from '@ant-design/charts'
+import { Trans } from '@lingui/macro'
 
 const Card: React.FC = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState([])
   useEffect(() => {
-    asyncFetch();
-  }, []);
+    asyncFetch()
+  }, [])
   const asyncFetch = () => {
     fetch('http://api.cofix.io/dashboard/trading/percentage/count')
       .then((response) => response.json())
-      .then((json) => setData(json["value"]))
+      .then((json) => setData(json['value']))
       .catch((error) => {
-        console.log('fetch data failed', error);
-      });
-  };
+        console.log('fetch data failed', error)
+      })
+  }
   const config = {
     appendPadding: 10,
     data: data,
@@ -25,19 +26,21 @@ const Card: React.FC = () => {
       content: '{name} {percentage}',
     },
     style: {
-      width: "100%",
+      width: '100%',
       height: 500,
       margin: 0,
-      padding: 40
+      padding: 40,
     },
-    interactions: [{type: 'pie-legend-active'}, {type: 'element-active'}],
-  };
+    interactions: [{ type: 'pie-legend-active' }, { type: 'element-active' }],
+  }
   return (
-    <div style={{ padding: "0 20px" }}>
-      <div>交易笔数分布</div>
-      <Pie {...config}/>
+    <div style={{ padding: '0 20px' }}>
+      <div>
+        <Trans>Transaction Number Distribution</Trans>
+      </div>
+      <Pie {...config} />
     </div>
-  );
-};
+  )
+}
 
-export default Card;
+export default Card
