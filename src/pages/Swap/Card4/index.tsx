@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { Pie } from '@ant-design/charts';
+import {Pie} from '@ant-design/charts';
 
 const Card: React.FC = () => {
   const [data, setData] = useState([]);
@@ -7,7 +7,7 @@ const Card: React.FC = () => {
     asyncFetch();
   }, []);
   const asyncFetch = () => {
-    fetch('http://api.cofix.io/dashboard/pair/tvl/pool')
+    fetch('http://api.cofix.io/dashboard/trading/percentage/count')
       .then((response) => response.json())
       .then((json) => setData(json["value"]))
       .catch((error) => {
@@ -26,12 +26,18 @@ const Card: React.FC = () => {
     },
     style: {
       width: "100%",
-      height: 210,
-      margin: 0
+      height: 500,
+      margin: 0,
+      padding: 40
     },
     interactions: [{type: 'pie-legend-active'}, {type: 'element-active'}],
   };
-  return <Pie {...config}/>;
+  return (
+    <div style={{ padding: "0 20px" }}>
+      <div>交易笔数分布</div>
+      <Pie {...config}/>
+    </div>
+  );
 };
 
 export default Card;

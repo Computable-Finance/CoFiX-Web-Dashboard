@@ -8,7 +8,7 @@ const Card: React.FC = () => {
     asyncFetch();
   }, [value]);
   const asyncFetch = () => {
-    fetch('http://api.cofix.io/dashboard/pair/tvl/' + value)
+    fetch('http://api.cofix.io/dashboard/trading/count/' + value)
       .then(response => response.json())
       .then(json => setData(json["value"]))
       .catch(error => console.log('error', error));
@@ -55,7 +55,7 @@ const Card: React.FC = () => {
     <div style={{ padding: "0 20px" }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 40 }}>
         <div>
-          <div style={{marginBottom: 10}}>TVL</div>
+          <div style={{marginBottom: 10}}>累计交易笔数</div>
           <div>Value</div>
         </div>
         <div style={{display: "flex", justifyContent: "space-between", width: 120}}>
