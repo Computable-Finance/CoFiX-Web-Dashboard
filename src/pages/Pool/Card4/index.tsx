@@ -34,7 +34,7 @@ const Card: React.FC = () => {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 40 }}>
         <div>
           <div style={{ marginBottom: 10 }}>
-            <Trans>Net Value of Fund Pool</Trans>
+            <Trans>Pool Net Worth</Trans>
           </div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', width: 120 }}>

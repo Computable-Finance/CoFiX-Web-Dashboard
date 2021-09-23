@@ -14,7 +14,7 @@ const Nav: FC = () => {
     { path: '/pool', content: <Trans>Pool</Trans> },
     { path: '/swap', content: <Trans>Swap</Trans> },
     { path: '/mining', content: <Trans>Mining</Trans> },
-    { path: '/id', content: <Trans>ID</Trans> },
+    { path: '/user', content: <Trans>User</Trans> },
   ].map((r) => (
     <li
       key={r.path}

@@ -36,7 +36,7 @@ const Card: React.FC = () => {
   return (
     <div style={{ padding: '0 20px' }}>
       <div>
-        <Trans>Transaction Volume Distribution</Trans>
+        <Trans>Distribution of transaction volume</Trans>
       </div>
       <Pie {...config} />
     </div>

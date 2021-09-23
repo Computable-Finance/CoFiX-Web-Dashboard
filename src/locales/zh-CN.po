@@ -13,34 +13,42 @@ msgstr ""
 
 #: src/pages/Pool/Card1/index.tsx
 #: src/pages/Pool/Card4/index.tsx
-msgid "1M"
-msgstr "1月"
-
-#: src/pages/Pool/Card1/index.tsx
-#: src/pages/Pool/Card4/index.tsx
-msgid "1W"
-msgstr "1周"
-
+#: src/pages/Pool/Card5/index.tsx
+#: src/pages/Swap/Card1/index.tsx
+#: src/pages/Swap/Card2/index.tsx
 #: src/pages/Swap/Card5/index.tsx
-msgid "Accumulated Fee Income"
-msgstr "累计手续费收入"
+msgid "1M"
+msgstr "1M"
 
 #: src/pages/Pool/Card1/index.tsx
 #: src/pages/Pool/Card4/index.tsx
+#: src/pages/Pool/Card5/index.tsx
+#: src/pages/Swap/Card1/index.tsx
+#: src/pages/Swap/Card2/index.tsx
+#: src/pages/Swap/Card5/index.tsx
+msgid "1W"
+msgstr "1W"
+
+#: src/pages/Pool/Card1/index.tsx
+#: src/pages/Pool/Card4/index.tsx
+#: src/pages/Pool/Card5/index.tsx
+#: src/pages/Swap/Card1/index.tsx
+#: src/pages/Swap/Card2/index.tsx
+#: src/pages/Swap/Card5/index.tsx
 msgid "All"
-msgstr "所有"
+msgstr "All"
 
 #: src/pages/shared/Menu/index.tsx
 msgid "Community"
 msgstr "社区"
 
-#: src/pages/Swap/Card2/index.tsx
-msgid "Cumulative Number of Transactions"
-msgstr "累计交易笔数"
+#: src/pages/Swap/Card4/index.tsx
+msgid "Distribution of transaction number"
+msgstr "交易笔数分布"
 
-#: src/pages/Swap/Card1/index.tsx
-msgid "Cumulative Transaction Volume"
-msgstr "累计交易额"
+#: src/pages/Swap/Card3/index.tsx
+msgid "Distribution of transaction volume"
+msgstr "交易额分布"
 
 #: src/pages/shared/Menu/index.tsx
 msgid "Document"
@@ -48,27 +56,23 @@ msgstr "文档"
 
 #: src/pages/shared/Menu/index.tsx
 msgid "Github"
-msgstr "Github"
-
-#: src/pages/shared/Header/index.tsx
-msgid "ID"
-msgstr ""
+msgstr "GitHub"
 
 #: src/pages/shared/Header/index.tsx
 msgid "Mining"
-msgstr ""
-
-#: src/pages/Pool/Card4/index.tsx
-msgid "Net Value of Fund Pool"
-msgstr "资金池净值"
+msgstr "挖矿"
 
 #: src/pages/shared/Header/index.tsx
 msgid "Pool"
-msgstr ""
+msgstr "资金池"
+
+#: src/pages/Pool/Card4/index.tsx
+msgid "Pool Net Worth"
+msgstr "资金池净值"
 
 #: src/pages/shared/Header/index.tsx
 msgid "Swap"
-msgstr ""
+msgstr "交易"
 
 #: src/pages/shared/Menu/index.tsx
 msgid "Switch to v2.0"
@@ -76,19 +80,27 @@ msgstr "切换到 v2.0"
 
 #: src/pages/Pool/Card1/index.tsx
 msgid "TVL"
-msgstr "总体价值锁定"
+msgstr "TVL"
 
 #: src/pages/Pool/Card5/index.tsx
-msgid "Token Amount"
-msgstr "代币数量"
+msgid "Token number"
+msgstr "Token 数量"
 
-#: src/pages/Swap/Card4/index.tsx
-msgid "Transaction Number Distribution"
-msgstr "交易笔数分布"
+#: src/pages/Swap/Card5/index.tsx
+msgid "Total fee income"
+msgstr "累计手续费收入"
 
-#: src/pages/Swap/Card3/index.tsx
-msgid "Transaction Volume Distribution"
-msgstr "交易额分布"
+#: src/pages/Swap/Card2/index.tsx
+msgid "Total transaction number"
+msgstr "累计交易笔数"
+
+#: src/pages/Swap/Card1/index.tsx
+msgid "Total transaction volume"
+msgstr "累计交易额"
+
+#: src/pages/shared/Header/index.tsx
+msgid "User"
+msgstr "用户"
 
 #: src/pages/shared/Menu/index.tsx
 msgid "WhitePaper"

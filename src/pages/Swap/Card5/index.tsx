@@ -72,7 +72,7 @@ const Card: React.FC = () => {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 40 }}>
         <div>
           <div style={{ marginBottom: 10 }}>
-            <Trans>Accumulated Fee Income</Trans>
+            <Trans>Total fee income</Trans>
           </div>
           <div>$ {sum}</div>
         </div>

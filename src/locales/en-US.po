@@ -13,20 +13,28 @@ msgstr ""
 
 #: src/pages/Pool/Card1/index.tsx
 #: src/pages/Pool/Card4/index.tsx
+#: src/pages/Pool/Card5/index.tsx
+#: src/pages/Swap/Card1/index.tsx
+#: src/pages/Swap/Card2/index.tsx
+#: src/pages/Swap/Card5/index.tsx
 msgid "1M"
 msgstr "1M"
 
 #: src/pages/Pool/Card1/index.tsx
 #: src/pages/Pool/Card4/index.tsx
+#: src/pages/Pool/Card5/index.tsx
+#: src/pages/Swap/Card1/index.tsx
+#: src/pages/Swap/Card2/index.tsx
+#: src/pages/Swap/Card5/index.tsx
 msgid "1W"
 msgstr "1W"
 
-#: src/pages/Swap/Card5/index.tsx
-msgid "Accumulated Fee Income"
-msgstr "Accumulated Fee Income"
-
 #: src/pages/Pool/Card1/index.tsx
 #: src/pages/Pool/Card4/index.tsx
+#: src/pages/Pool/Card5/index.tsx
+#: src/pages/Swap/Card1/index.tsx
+#: src/pages/Swap/Card2/index.tsx
+#: src/pages/Swap/Card5/index.tsx
 msgid "All"
 msgstr "All"
 
@@ -34,13 +42,13 @@ msgstr "All"
 msgid "Community"
 msgstr "Community"
 
-#: src/pages/Swap/Card2/index.tsx
-msgid "Cumulative Number of Transactions"
-msgstr "Cumulative Number of Transactions"
+#: src/pages/Swap/Card4/index.tsx
+msgid "Distribution of transaction number"
+msgstr "Distribution of transaction number"
 
-#: src/pages/Swap/Card1/index.tsx
-msgid "Cumulative Transaction Volume"
-msgstr "Cumulative Transaction Volume"
+#: src/pages/Swap/Card3/index.tsx
+msgid "Distribution of transaction volume"
+msgstr "Distribution of transaction volume"
 
 #: src/pages/shared/Menu/index.tsx
 msgid "Document"
@@ -51,20 +59,16 @@ msgid "Github"
 msgstr "Github"
 
 #: src/pages/shared/Header/index.tsx
-msgid "ID"
-msgstr "ID"
-
-#: src/pages/shared/Header/index.tsx
 msgid "Mining"
 msgstr "Mining"
-
-#: src/pages/Pool/Card4/index.tsx
-msgid "Net Value of Fund Pool"
-msgstr "Net Value of Fund Pool"
 
 #: src/pages/shared/Header/index.tsx
 msgid "Pool"
 msgstr "Pool"
+
+#: src/pages/Pool/Card4/index.tsx
+msgid "Pool Net Worth"
+msgstr "Pool Net Worth"
 
 #: src/pages/shared/Header/index.tsx
 msgid "Swap"
@@ -79,16 +83,24 @@ msgid "TVL"
 msgstr "TVL"
 
 #: src/pages/Pool/Card5/index.tsx
-msgid "Token Amount"
-msgstr "Token Amount"
+msgid "Token number"
+msgstr "Token number"
 
-#: src/pages/Swap/Card4/index.tsx
-msgid "Transaction Number Distribution"
-msgstr "Transaction Number Distribution"
+#: src/pages/Swap/Card5/index.tsx
+msgid "Total fee income"
+msgstr "Total fee income"
 
-#: src/pages/Swap/Card3/index.tsx
-msgid "Transaction Volume Distribution"
-msgstr "Transaction Volume Distribution"
+#: src/pages/Swap/Card2/index.tsx
+msgid "Total transaction number"
+msgstr "Total transaction number"
+
+#: src/pages/Swap/Card1/index.tsx
+msgid "Total transaction volume"
+msgstr "Total transaction volume"
+
+#: src/pages/shared/Header/index.tsx
+msgid "User"
+msgstr "User"
 
 #: src/pages/shared/Menu/index.tsx
 msgid "WhitePaper"
