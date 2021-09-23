@@ -1,6 +1,6 @@
 # CoFiX Dashboard
 
-[![build](https://github.com/Computable-Finance/CoFiX-Web-Dashboard/actions/workflows/build.yml/badge.svg)](https://github.com/Computable-Finance/CoFiX-Web-Dashboard/actions/workflows/build.yml)
+[![build](https://github.com/Computable-Finance/CoFiX-Web-Dashboard/actions/workflows/build.yml/badge.svg)](https://github.com/Computable-Finance/CoFiX-Web-Dashboard/actions/workflows/build.yml) [![deploy](https://github.com/Computable-Finance/CoFiX-Web-Dashboard/actions/workflows/ci.yml/badge.svg)](https://github.com/Computable-Finance/CoFiX-Web-Dashboard/actions/workflows/ci.yml)
 
 ## Introduction
 
