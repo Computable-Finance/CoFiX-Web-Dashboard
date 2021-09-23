@@ -6,7 +6,7 @@ import Header from 'src/pages/shared/Header'
 const Swap = loadable(() => import('./Swap'))
 const Pool = loadable(() => import('./Pool'))
 const Mining = loadable(() => import('./Mining'))
-const ID = loadable(() => import('./ID'))
+const User = loadable(() => import('./User'))
 const Index = loadable(() => import('./Index'))
 
 function App() {
@@ -33,9 +33,9 @@ function App() {
             <Mining />
           </Route>
 
-          <Route path="/id">
+          <Route path="/user">
             <Header />
-            <ID />
+            <User />
           </Route>
 
           <Redirect to="/" />

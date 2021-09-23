@@ -20,7 +20,7 @@ const Page = styled.div`
   row-gap: 36px;
 `
 
-const ID: FC = () => {
+const User: FC = () => {
   return (
     <Page className={`cofi-page`}>
       <A>
@@ -45,4 +45,4 @@ const ID: FC = () => {
   )
 }
 
-export default ID
+export default User
