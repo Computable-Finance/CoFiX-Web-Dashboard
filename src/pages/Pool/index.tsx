@@ -1,8 +1,12 @@
 import {FC} from 'react'
 import Card1 from './Card1'
 import Card2 from './Card2'
-import styled from "styled-components";
+import Card3 from './Card3'
+import Card4 from './Card4'
+import Card5 from "./Card5"
+import styled from "styled-components"
 import {A, B, C, D, E} from "src/components/Grid"
+
 
 const Page = styled.div`
   padding-top: 22px;
@@ -22,9 +26,9 @@ const Pool: FC = () => {
     <Page className={`cofi-page`}>
       <A><Card1/></A>
       <B><Card2/></B>
-      <C><Card2/></C>
-      <D><Card1/></D>
-      <E><Card1/></E>
+      <C><Card3/></C>
+      <D><Card4/></D>
+      <E><Card5/></E>
     </Page>
   )
 }

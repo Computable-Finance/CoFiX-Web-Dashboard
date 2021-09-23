@@ -7,7 +7,7 @@ const Card2: React.FC = () => {
     asyncFetch();
   }, []);
   const asyncFetch = () => {
-    fetch('http://api.cofix.io/dashboard/pair/tvl/pool')
+    fetch('http://api.cofix.io/dashboard/pair/tvl/token')
       .then((response) => response.json())
       .then((json) => setData(json["value"]))
       .catch((error) => {
