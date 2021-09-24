@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Line } from '@ant-design/charts'
+import { Column } from '@ant-design/charts'
 import { Trans } from '@lingui/macro'
 
 const Card: React.FC = () => {
@@ -21,21 +21,13 @@ const Card: React.FC = () => {
   }
   const config = {
     data: data,
+    isGroup: true,
     xField: 'x',
     yField: 'y',
     seriesField: 'name',
     style: {
       height: 300,
       width: '100%',
-    },
-    point: {
-      size: 2,
-      shape: 'circle',
-      style: {
-        fill: 'white',
-        stroke: '#59c3b1',
-        lineWidth: 1,
-      },
     },
   }
   return (
@@ -67,7 +59,7 @@ const Card: React.FC = () => {
           </div>
         </div>
       </div>
-      <Line {...config} />
+      <Column {...config} />
     </div>
   )
 }
