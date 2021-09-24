@@ -11,6 +11,8 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+#: src/pages/Mining/Card4/index.tsx
+#: src/pages/Mining/Card5/index.tsx
 #: src/pages/Pool/Card1/index.tsx
 #: src/pages/Pool/Card4/index.tsx
 #: src/pages/Pool/Card5/index.tsx
@@ -20,6 +22,8 @@ msgstr ""
 msgid "1M"
 msgstr "1M"
 
+#: src/pages/Mining/Card4/index.tsx
+#: src/pages/Mining/Card5/index.tsx
 #: src/pages/Pool/Card1/index.tsx
 #: src/pages/Pool/Card4/index.tsx
 #: src/pages/Pool/Card5/index.tsx
@@ -29,6 +33,8 @@ msgstr "1M"
 msgid "1W"
 msgstr "1W"
 
+#: src/pages/Mining/Card4/index.tsx
+#: src/pages/Mining/Card5/index.tsx
 #: src/pages/Pool/Card1/index.tsx
 #: src/pages/Pool/Card4/index.tsx
 #: src/pages/Pool/Card5/index.tsx
@@ -41,6 +47,22 @@ msgstr "All"
 #: src/pages/shared/Menu/index.tsx
 msgid "Community"
 msgstr "Community"
+
+#: src/pages/Mining/Card4/index.tsx
+msgid "Daily Mining (COFI)"
+msgstr "Daily Mining (COFI)"
+
+#: src/pages/Mining/Card5/index.tsx
+msgid "Daily repurchase (COFI)"
+msgstr "Daily repurchase (COFI)"
+
+#: src/pages/Mining/Card6/index.tsx
+msgid "Distribution of Mining"
+msgstr "Distribution of Mining"
+
+#: src/pages/Mining/Card7/index.tsx
+msgid "Distribution of repurchase"
+msgstr "Distribution of repurchase"
 
 #: src/pages/Swap/Card4/index.tsx
 msgid "Distribution of transaction number"

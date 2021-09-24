@@ -9,7 +9,7 @@ const Card: React.FC = () => {
     asyncFetch()
   }, [value])
   const asyncFetch = () => {
-    fetch('http://api.cofix.io/dashboard/mining/production/' + value)
+    fetch('http://api.cofix.io/dashboard/mining/redeem/' + value)
       .then((response) => response.json())
       .then((json) => setData(json['value']))
       .catch((error) => {
@@ -24,6 +24,9 @@ const Card: React.FC = () => {
     xField: 'x',
     yField: 'y',
     seriesField: 'name',
+    lineStyle: {
+      stroke: 'l(0) 0:#5ac276 0.5:#59c3b1 1:#6fd8c4',
+    },
     style: {
       height: 300,
       width: '100%',
@@ -43,7 +46,7 @@ const Card: React.FC = () => {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 40 }}>
         <div>
           <div style={{ marginBottom: 10 }}>
-            <Trans>Daily Mining (COFI)</Trans>
+            <Trans>Daily repurchase (COFI)</Trans>
           </div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', width: 120 }}>

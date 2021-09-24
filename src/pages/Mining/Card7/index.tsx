@@ -8,7 +8,7 @@ const Card: React.FC = () => {
     asyncFetch()
   }, [])
   const asyncFetch = () => {
-    fetch('http://api.cofix.io/dashboard/mining/percentage/production')
+    fetch('http://api.cofix.io/dashboard/mining/percentage/redeem')
       .then((response) => response.json())
       .then((json) => setData(json['value']))
       .catch((error) => {
@@ -37,7 +37,7 @@ const Card: React.FC = () => {
   return (
     <div style={{ padding: '0 20px' }}>
       <div>
-        <Trans>Distribution of Mining</Trans>
+        <Trans>Distribution of repurchase</Trans>
       </div>
       <Pie {...config} />
     </div>

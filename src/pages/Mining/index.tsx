@@ -3,7 +3,9 @@ import Card1 from './Card1'
 import Card2 from './Card2'
 import Card3 from './Card3'
 import Card4 from './Card4'
+import Card5 from './Card5'
 import Card6 from './Card6'
+import Card7 from './Card7'
 import { A, B, C, D, E, F, G } from 'src/components/Grid'
 
 import styled from 'styled-components'
@@ -37,13 +39,13 @@ const Mining: FC = () => {
         <Card4 />
       </D>
       <E>
-        <Card4 />
+        <Card5 />
       </E>
       <F>
         <Card6 />
       </F>
       <G>
-        <Card6 />
+        <Card7 />
       </G>
     </Page>
   )
