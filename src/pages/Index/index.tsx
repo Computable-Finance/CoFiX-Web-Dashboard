@@ -14,15 +14,17 @@ import {
   CofiX8,
   CofiX9,
 } from '../../components/Icon'
-import { MenuButton } from '../shared/Menu'
 import Button from '../../components/Button'
 import styled, { keyframes } from 'styled-components'
-import { pulse } from 'react-animations'
+import { bounceIn } from 'react-animations'
 
-const pulseAnimation = keyframes`${pulse}`
+const bounceInAnimation = keyframes`${bounceIn}`
 
 const PulseDiv = styled.div`
-  animation: 3s infinite ${pulseAnimation};
+  animation: 4s infinite alternate ${bounceInAnimation};
+`
+const PulseDiv2 = styled.div`
+  animation: 3s infinite alternate ${bounceInAnimation};
 `
 
 const Index: FC = () => {
@@ -37,12 +39,6 @@ const Index: FC = () => {
             <Link to="/">
               <CoFiXLogoWithTextWhite />
             </Link>
-          </div>
-          <div className={`cofi-header-extra`}>
-            <Link to={'/pool'}>
-              <div style={{ color: 'white' }}>Dashboard</div>
-            </Link>
-            <MenuButton />
           </div>
         </header>
         <div className={'cofi-body'}>
@@ -63,27 +59,27 @@ const Index: FC = () => {
         <PulseDiv style={{ position: 'absolute', left: '43%', top: '10.33%' }}>
           <CofiX2 />
         </PulseDiv>
-        <PulseDiv style={{ position: 'absolute', left: '68.52%', top: '25%' }}>
+        <PulseDiv2 style={{ position: 'absolute', left: '68.52%', top: '25%' }}>
           <CofiX3 />
-        </PulseDiv>
+        </PulseDiv2>
         <PulseDiv style={{ position: 'absolute', left: '80.97%', top: '44.11%' }}>
           <CofiX4 />
         </PulseDiv>
-        <PulseDiv style={{ position: 'absolute', left: '69.79%', top: '64.05%' }}>
+        <PulseDiv2 style={{ position: 'absolute', left: '69.79%', top: '64.05%' }}>
           <CofiX5 />
-        </PulseDiv>
+        </PulseDiv2>
         <PulseDiv style={{ position: 'absolute', left: '36.7%', top: '80.99%' }}>
           <CofiX6 />
         </PulseDiv>
-        <PulseDiv style={{ position: 'absolute', left: '20.52%', top: '64.67%' }}>
+        <PulseDiv2 style={{ position: 'absolute', left: '20.52%', top: '64.67%' }}>
           <CofiX7 />
-        </PulseDiv>
+        </PulseDiv2>
         <PulseDiv style={{ position: 'absolute', left: '5.86%', top: '44%' }}>
           <CofiX8 />
         </PulseDiv>
-        <PulseDiv style={{ position: 'absolute', left: '21.6%', top: '24.5%' }}>
+        <PulseDiv2 style={{ position: 'absolute', left: '21.6%', top: '24.5%' }}>
           <CofiX9 />
-        </PulseDiv>
+        </PulseDiv2>
       </div>
     </>
   )
