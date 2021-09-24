@@ -28,6 +28,15 @@ const Card: React.FC = () => {
       height: 300,
       width: '100%',
     },
+    point: {
+      size: 2,
+      shape: 'circle',
+      style: {
+        fill: 'white',
+        stroke: '#59c3b1',
+        lineWidth: 1,
+      },
+    },
   }
   return (
     <div style={{ padding: '0 20px' }}>

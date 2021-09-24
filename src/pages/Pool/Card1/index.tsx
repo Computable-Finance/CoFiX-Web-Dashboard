@@ -23,6 +23,7 @@ const Card: React.FC = () => {
     data: data,
     xField: 'x',
     yField: 'y',
+    seriesField: 'name',
     label: {},
     point: {
       size: 2,
@@ -33,6 +34,7 @@ const Card: React.FC = () => {
         lineWidth: 1,
       },
     },
+    tooltip: { showMarkers: false },
     smooth: true,
     style: {
       height: 300,

@@ -33,6 +33,7 @@ const Card: React.FC = () => {
     data: data,
     xField: 'x',
     yField: 'y',
+    seriesField: 'name',
     label: {},
     point: {
       size: 2,
@@ -48,8 +49,7 @@ const Card: React.FC = () => {
       active: {
         style: {
           shadowBlur: 4,
-          stroke: '#000',
-          fill: 'red',
+          fill: '#59c3b1',
         },
       },
     },
