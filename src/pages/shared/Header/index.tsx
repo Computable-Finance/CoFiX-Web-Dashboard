@@ -47,7 +47,7 @@ const Header: FC = () => {
       <header className={`${classPrefix}`}>
         <div className={`${classPrefix}-prefix`}>
           <Link to="/">
-            <CoFiXLogoWithText />
+            <CoFiXLogoWithText/>
             <div>Dashboard</div>
           </Link>
         </div>
