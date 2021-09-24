@@ -13,7 +13,7 @@ const Title = styled.div`
 `
 
 const Desc = styled.div`
-  font-family: OPPOSans, fangsong;
+  font-family: OPPOSansLight;
   font-weight: lighter;
   font-size: 12px;
   text-align: center;

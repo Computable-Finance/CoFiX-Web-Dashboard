@@ -78,7 +78,7 @@ const Card: React.FC = () => {
           </div>
         </div>
       </div>
-      <Line {...config}/>
+      <Line {...config} />
     </div>
   )
 }
