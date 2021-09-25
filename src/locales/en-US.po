@@ -58,6 +58,10 @@ msgstr "All"
 msgid "Community"
 msgstr "Community"
 
+#: src/pages/Mining/Card3/index.tsx
+msgid "Current Circulation (COFI)"
+msgstr "Current Circulation (COFI)"
+
 #: src/pages/Mining/Card4/index.tsx
 msgid "Daily Mining (COFI)"
 msgstr "Daily Mining (COFI)"
@@ -122,6 +126,10 @@ msgstr "TVL"
 msgid "Token number"
 msgstr "Token number"
 
+#: src/pages/Mining/Card1/index.tsx
+msgid "Total Mining (COFI)"
+msgstr "Total Mining (COFI)"
+
 #: src/pages/Swap/Card5/index.tsx
 msgid "Total fee income"
 msgstr "Total fee income"
@@ -129,6 +137,10 @@ msgstr "Total fee income"
 #: src/pages/User/Card2/index.tsx
 msgid "Total maker users"
 msgstr "Total maker users"
+
+#: src/pages/Mining/Card2/index.tsx
+msgid "Total repurchase (COFI)"
+msgstr "Total repurchase (COFI)"
 
 #: src/pages/User/Card4/index.tsx
 msgid "Total repurchase users"

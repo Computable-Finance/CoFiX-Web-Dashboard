@@ -58,13 +58,17 @@ msgstr "All"
 msgid "Community"
 msgstr "社区"
 
+#: src/pages/Mining/Card3/index.tsx
+msgid "Current Circulation (COFI)"
+msgstr "当前流通量（COFI）"
+
 #: src/pages/Mining/Card4/index.tsx
 msgid "Daily Mining (COFI)"
 msgstr "每日出矿量（COFI）"
 
 #: src/pages/Mining/Card5/index.tsx
 msgid "Daily repurchase (COFI)"
-msgstr "每日回售量"
+msgstr "每日回售量（COFI）"
 
 #: src/pages/Mining/Card6/index.tsx
 msgid "Distribution of Mining"
@@ -122,6 +126,10 @@ msgstr "TVL"
 msgid "Token number"
 msgstr "Token 数量"
 
+#: src/pages/Mining/Card1/index.tsx
+msgid "Total Mining (COFI)"
+msgstr "累计出矿量（COFI）"
+
 #: src/pages/Swap/Card5/index.tsx
 msgid "Total fee income"
 msgstr "累计手续费收入"
@@ -129,6 +137,10 @@ msgstr "累计手续费收入"
 #: src/pages/User/Card2/index.tsx
 msgid "Total maker users"
 msgstr "累计做市用户"
+
+#: src/pages/Mining/Card2/index.tsx
+msgid "Total repurchase (COFI)"
+msgstr "累计回售量（COFI）"
 
 #: src/pages/User/Card4/index.tsx
 msgid "Total repurchase users"

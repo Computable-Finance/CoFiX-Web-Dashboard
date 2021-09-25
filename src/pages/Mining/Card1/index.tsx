@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Trans} from "@lingui/macro";
 
 const Title = styled.div`
   font-family: AmericanTypewriterBold, serif;
@@ -24,7 +25,7 @@ const Card: React.FC = () => {
   return (
     <div>
       <Title>72438.908</Title>
-      <Desc>Accumulated repurchase (COFI)</Desc>
+      <Desc><Trans>Total Mining (COFI)</Trans></Desc>
     </div>
   )
 }
