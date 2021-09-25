@@ -6,7 +6,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import I18nProvider from 'src/libs/i18n/provider'
 import 'reflect-metadata'
-import Web3Provider from 'src/libs/web3/provider'
 import App from './pages/App'
 
 BigNumber.config({ ROUNDING_MODE: BigNumber.ROUND_DOWN })
@@ -14,9 +13,7 @@ export const rootElement = document.getElementById('root')
 const app = (
   <React.StrictMode>
     <I18nProvider>
-      <Web3Provider>
-        <App />
-      </Web3Provider>
+      <App />
     </I18nProvider>
   </React.StrictMode>
 )
