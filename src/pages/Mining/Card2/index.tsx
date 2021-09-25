@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Trans} from "@lingui/macro";
+import useDAOInfo from "../../../hooks/useDAOInfo";
+import {toBigNumber} from "../../../libs/web3/util";
 
 const Title = styled.div`
   font-family: AmericanTypewriterBold, serif;
@@ -22,9 +24,10 @@ const Desc = styled.div`
 `
 
 const Card: React.FC = () => {
+  const daoInfo = useDAOInfo()
   return (
     <div>
-      <Title>72438.908</Title>
+      <Title>{daoInfo ? toBigNumber(daoInfo.cofiAmount).toFormat(0) : '--'}</Title>
       <Desc><Trans>Total repurchase (COFI)</Trans></Desc>
     </div>
   )

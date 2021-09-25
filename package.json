@@ -5,7 +5,7 @@
   "dependencies": {
     "@ant-design/charts": "^1.2.11",
     "@ethersproject/address": "^5.4.0",
-    "@ethersproject/providers": "^5.3.1",
+    "@ethersproject/providers": "^5.4.5",
     "@lingui/detect-locale": "^3.10.4",
     "@lingui/react": "^3.10.2",
     "@loadable/component": "^5.15.0",
@@ -85,6 +85,9 @@
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.1.7",
     "@types/styled-components": "^5.1.14",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/walletconnect-connector": "^6.2.4",
     "dynamic-cdn-webpack-plugin": "^5.0.0",
     "husky": "^7.0.1",
     "lint-staged": "^11.0.1",

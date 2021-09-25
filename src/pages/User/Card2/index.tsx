@@ -37,7 +37,7 @@ const Card = () => {
 
   return (
     <div>
-      <Title>{data}</Title>
+      <Title>{data ? data : "-"}</Title>
       <Desc><Trans>Total maker users</Trans></Desc>
     </div>
   )
