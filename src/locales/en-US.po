@@ -19,6 +19,8 @@ msgstr ""
 #: src/pages/Swap/Card1/index.tsx
 #: src/pages/Swap/Card2/index.tsx
 #: src/pages/Swap/Card5/index.tsx
+#: src/pages/User/Card5/index.tsx
+#: src/pages/User/Card6/index.tsx
 msgid "1M"
 msgstr "1M"
 
@@ -30,8 +32,14 @@ msgstr "1M"
 #: src/pages/Swap/Card1/index.tsx
 #: src/pages/Swap/Card2/index.tsx
 #: src/pages/Swap/Card5/index.tsx
+#: src/pages/User/Card5/index.tsx
+#: src/pages/User/Card6/index.tsx
 msgid "1W"
 msgstr "1W"
+
+#: src/pages/User/Card6/index.tsx
+msgid "Active user"
+msgstr "Active user"
 
 #: src/pages/Mining/Card4/index.tsx
 #: src/pages/Mining/Card5/index.tsx
@@ -41,6 +49,8 @@ msgstr "1W"
 #: src/pages/Swap/Card1/index.tsx
 #: src/pages/Swap/Card2/index.tsx
 #: src/pages/Swap/Card5/index.tsx
+#: src/pages/User/Card5/index.tsx
+#: src/pages/User/Card6/index.tsx
 msgid "All"
 msgstr "All"
 
@@ -83,6 +93,10 @@ msgstr "Github"
 #: src/pages/shared/Header/index.tsx
 msgid "Mining"
 msgstr "Mining"
+
+#: src/pages/User/Card5/index.tsx
+msgid "New users"
+msgstr "New users"
 
 #: src/pages/shared/Header/index.tsx
 msgid "Pool"

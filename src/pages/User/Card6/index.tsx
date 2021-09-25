@@ -1,57 +1,69 @@
 import React, { useState, useEffect } from 'react'
 import { Line } from '@ant-design/charts'
+import { Trans } from '@lingui/macro'
 
-const DemoLine: React.FC = () => {
+const Card: React.FC = () => {
   const [data, setData] = useState([])
+  const [value, setValue] = useState('7')
   useEffect(() => {
     asyncFetch()
-  }, [])
+  }, [value])
   const asyncFetch = () => {
-    fetch('https://gw.alipayobjects.com/os/bmw-prod/b21e7336-0b3e-486c-9070-612ede49284e.json')
+    fetch('http://api.cofix.io/dashboard/user/active/' + value)
       .then((response) => response.json())
-      .then((json) => setData(json))
+      .then((json) => setData(json['value']))
       .catch((error) => {
         console.log('fetch data failed', error)
       })
   }
-  const [value, setValue] = useState('1W')
   const handleChoice = (value: string) => {
     setValue(value)
   }
   const config = {
     data: data,
-    xField: 'date',
-    yField: 'value',
-    seriesField: 'country',
+    xField: 'x',
+    yField: 'y',
+    seriesField: 'name',
     style: {
       height: 300,
       width: '100%',
+    },
+    point: {
+      size: 2,
+      shape: 'circle',
+      style: {
+        fill: 'white',
+        stroke: '#59c3b1',
+        lineWidth: 1,
+      },
     },
   }
   return (
     <div style={{ padding: '0 20px' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 40 }}>
         <div>
-          <div style={{ marginBottom: 10 }}>活跃用户</div>
+          <div style={{ marginBottom: 10 }}>
+            <Trans>Active user</Trans>
+          </div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', width: 120 }}>
           <div
-            onClick={() => handleChoice('1W')}
-            style={{ color: value === '1W' ? '#5ac276' : 'black', cursor: 'pointer', userSelect: 'none' }}
+            onClick={() => handleChoice('7')}
+            style={{ color: value === '7' ? '#5ac276' : 'black', cursor: 'pointer', userSelect: 'none' }}
           >
-            1W
+            <Trans>1W</Trans>
           </div>
           <div
-            onClick={() => handleChoice('1M')}
-            style={{ color: value === '1M' ? '#5ac276' : 'black', cursor: 'pointer', userSelect: 'none' }}
+            onClick={() => handleChoice('30')}
+            style={{ color: value === '30' ? '#5ac276' : 'black', cursor: 'pointer', userSelect: 'none' }}
           >
-            1M
+            <Trans>1M</Trans>
           </div>
           <div
-            onClick={() => handleChoice('All')}
-            style={{ color: value === 'All' ? '#5ac276' : 'black', cursor: 'pointer', userSelect: 'none' }}
+            onClick={() => handleChoice('9999')}
+            style={{ color: value === '9999' ? '#5ac276' : 'black', cursor: 'pointer', userSelect: 'none' }}
           >
-            All
+            <Trans>All</Trans>
           </div>
         </div>
       </div>
@@ -60,4 +72,4 @@ const DemoLine: React.FC = () => {
   )
 }
 
-export default DemoLine
+export default Card
