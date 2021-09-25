@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import styled from 'styled-components'
 import {Trans} from "@lingui/macro";
 
@@ -22,9 +22,29 @@ const Desc = styled.div`
 `
 
 const Card: React.FC = () => {
+  const [sum, setSum] = useState(0)
+  const asyncFetchSum = () => {
+    fetch('http://api.cofix.io/dashboard/mining/production/9999')
+      .then((response) => response.json())
+      .then((json) => {
+        console.log(json)
+        const list = json['value']
+        let s = 0
+        for (let i = 0; i < list.length; ++i) {
+          s += list[i]['y']
+        }
+        setSum(s)
+      })
+      .catch((error) => console.log('error', error))
+  }
+
+  useEffect(()=> {
+    asyncFetchSum()
+  }, [])
+
   return (
     <div>
-      <Title>12,709,280</Title>
+      <Title>{sum===0 ? "-" : sum}</Title>
       <Desc><Trans>Total Mining (COFI)</Trans></Desc>
     </div>
   )

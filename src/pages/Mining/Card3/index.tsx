@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import styled from 'styled-components'
 import {Trans} from "@lingui/macro";
 
@@ -22,9 +22,44 @@ const Desc = styled.div`
 `
 
 const Card: React.FC = () => {
+  const [mining, setMining] = useState(0)
+  const [repurchase, setRepurchase] = useState(0)
+  const asyncFetchMining = () => {
+    fetch('http://api.cofix.io/dashboard/mining/production/9999')
+      .then((response) => response.json())
+      .then((json) => {
+        const list = json['value']
+        let s = 0
+        for (let i = 0; i < list.length; ++i) {
+          s += list[i]['y']
+        }
+        setMining(s)
+      })
+      .catch((error) => console.log('error', error))
+  }
+
+  const asyncFetchRepurchase = () => {
+    fetch('http://api.cofix.io/dashboard/mining/redeem/9999')
+      .then((response) => response.json())
+      .then((json) => {
+        const list = json['value']
+        let s = 0
+        for (let i = 0; i < list.length; ++i) {
+          s += list[i]['y']
+        }
+        setRepurchase(s)
+      })
+      .catch((error) => console.log('error', error))
+  }
+
+  useEffect(()=> {
+    asyncFetchMining()
+    asyncFetchRepurchase()
+  }, [])
+
   return (
     <div>
-      <Title>5,877,978</Title>
+      <Title>{ (mining === 0 || repurchase === 0) ? "-" : mining-repurchase}</Title>
       <Desc><Trans>Current Circulation (COFI)</Trans></Desc>
     </div>
   )
