@@ -17,6 +17,7 @@ const Desc = styled.div`
   font-weight: lighter;
   font-size: 12px;
   text-align: center;
+  color: #878787;
 `
 
 const Card: React.FC = () => {
