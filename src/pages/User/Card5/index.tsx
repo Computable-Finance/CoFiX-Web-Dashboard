@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Line } from '@ant-design/charts'
 import { Trans } from '@lingui/macro'
 
-const Card: React.FC = () => {
+const Card = () => {
   const [data, setData] = useState([])
   const [value, setValue] = useState('7')
   useEffect(() => {

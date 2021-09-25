@@ -1,4 +1,3 @@
-import { FC } from 'react'
 import Card1 from './Card1'
 import Card2 from './Card2'
 import Card3 from './Card3'
@@ -20,7 +19,7 @@ const Page = styled.div`
   row-gap: 36px;
 `
 
-const User: FC = () => {
+const User = () => {
   return (
     <Page className={`cofi-page`}>
       <A>
