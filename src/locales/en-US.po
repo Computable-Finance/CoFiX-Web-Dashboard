@@ -126,6 +126,18 @@ msgstr "Token number"
 msgid "Total fee income"
 msgstr "Total fee income"
 
+#: src/pages/User/Card2/index.tsx
+msgid "Total maker users"
+msgstr "Total maker users"
+
+#: src/pages/User/Card4/index.tsx
+msgid "Total repurchase users"
+msgstr "Total repurchase users"
+
+#: src/pages/User/Card3/index.tsx
+msgid "Total trading users"
+msgstr "Total trading users"
+
 #: src/pages/Swap/Card2/index.tsx
 msgid "Total transaction number"
 msgstr "Total transaction number"
@@ -133,6 +145,10 @@ msgstr "Total transaction number"
 #: src/pages/Swap/Card1/index.tsx
 msgid "Total transaction volume"
 msgstr "Total transaction volume"
+
+#: src/pages/User/Card1/index.tsx
+msgid "Total user"
+msgstr "Total user"
 
 #: src/pages/shared/Header/index.tsx
 msgid "User"

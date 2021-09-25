@@ -126,6 +126,18 @@ msgstr "Token 数量"
 msgid "Total fee income"
 msgstr "累计手续费收入"
 
+#: src/pages/User/Card2/index.tsx
+msgid "Total maker users"
+msgstr "累计做市用户"
+
+#: src/pages/User/Card4/index.tsx
+msgid "Total repurchase users"
+msgstr "累计回售用户"
+
+#: src/pages/User/Card3/index.tsx
+msgid "Total trading users"
+msgstr "累计交易用户"
+
 #: src/pages/Swap/Card2/index.tsx
 msgid "Total transaction number"
 msgstr "累计交易笔数"
@@ -133,6 +145,10 @@ msgstr "累计交易笔数"
 #: src/pages/Swap/Card1/index.tsx
 msgid "Total transaction volume"
 msgstr "累计交易额"
+
+#: src/pages/User/Card1/index.tsx
+msgid "Total user"
+msgstr "累计用户"
 
 #: src/pages/shared/Header/index.tsx
 msgid "User"

@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import styled from 'styled-components'
+import {Trans} from "@lingui/macro";
 
 const Title = styled.div`
   font-family: AmericanTypewriterBold, serif;
@@ -24,7 +25,7 @@ const Card = () => {
   const asyncFetch = () => {
     fetch('http://api.cofix.io/dashboard/user/overview')
       .then((response) => response.json())
-      .then((json) => setData(json['value']["total"]))
+      .then((json) => setData(json['value']["maket"]))
       .catch((error) => {
         console.log('fetch data failed', error)
       })
@@ -36,7 +37,7 @@ const Card = () => {
   return (
     <div>
       <Title>{data}</Title>
-      <Desc>total</Desc>
+      <Desc><Trans>Total maker users</Trans></Desc>
     </div>
   )
 }
