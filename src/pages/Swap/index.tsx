@@ -8,7 +8,7 @@ import styled from 'styled-components'
 import { A, B, C, D, E } from 'src/components/Grid'
 
 const Page = styled.div`
-  padding: 22px 22px 44px 22px;
+  padding: 22px 28px 44px 28px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 500px 500px 550px 500px;
