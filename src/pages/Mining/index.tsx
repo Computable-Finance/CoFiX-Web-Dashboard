@@ -11,7 +11,7 @@ import { A, B, C, D, E, F, G } from 'src/components/Grid'
 import styled from 'styled-components'
 
 const Page = styled.div`
-  padding-top: 22px;
+  padding: 22px 22px 44px 22px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 160px 500px 500px 550px;
