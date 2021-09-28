@@ -57,7 +57,7 @@ const Card: React.FC = () => {
           <div style={{ marginBottom: 10 }}>
             <Trans>TVL</Trans>
           </div>
-          <div>$ {tvl}</div>
+          <div style={{ fontWeight: "bold" }}>$ {tvl}</div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', width: 120 }}>
           <div
